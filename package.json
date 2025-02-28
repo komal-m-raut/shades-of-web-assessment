@@ -1,0 +1,56 @@
+{
+  "name": "fms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "prepare-husky": "npx husky init; echo \"# pnpm test\nnpx lint-staged\" > .husky/pre-commit",
+    "test": "echo \"No tests specified\" && exit 0",
+    "prisma-studio": "prisma studio"
+  },
+  "dependencies": {
+    "axios": "^1.8.1",
+    "clsx": "^2.1.1",
+    "next": "15.1.6",
+    "next-auth": "^4.24.11",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.19.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "postcss": "^8",
+    "prettier": "^3.4.2",
+    "shadcn-ui": "link:..\\..\\AppData\\Local\\pnpm\\global\\5\\node_modules\\shadcn-ui",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "typescript-eslint": "^8.22.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "shadcn-ui": "link:..\\..\\AppData\\Local\\pnpm\\global\\5\\node_modules\\shadcn-ui"
+    }
+  }
+}
