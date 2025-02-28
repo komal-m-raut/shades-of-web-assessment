@@ -4,10 +4,10 @@ import axios from 'axios';
 export async function GET() {
   try {
     const response = await axios.get(
-      'https://devsow.wpengine.com/wp-json/communities/all',
+      `${process.env.BASE_URL}/wp-json/communities/all`,
       {
         headers: {
-          Authorization: 'Basic bmVoYTowI21JdkJCdzRBdWJoKTU5QXhEQ0hIQTU=',
+          Authorization: `Basic ${process.env.BASIC_ACCESS_TOKEN}`,
           'Content-Type': 'application/json',
         },
       }

@@ -2,7 +2,13 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['devsow.wpengine.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'devsow.wpengine.com',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
